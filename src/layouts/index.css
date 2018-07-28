@@ -95,13 +95,15 @@ hr {
     padding-top: 1rem;
   }
   .loopingText {
-    min-height: 180px;
+    min-height: 200px;
     max-width: 90%;
   }
 }
 
 @media (min-width: 1280px) {
   .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
     max-width: 1280px;
     margin: 0 auto;
     display: grid;
@@ -112,6 +114,6 @@ hr {
 
 @media(min-height: 800px) {
   .container {
-    padding-top: 4rem;
+    padding-top: 3rem;
   }
 }
