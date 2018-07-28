@@ -27,7 +27,7 @@ hr {
 }
 
 .titleSmall {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 200;
 }
 
@@ -59,14 +59,14 @@ hr {
 .twitterLink {
   opacity: 0.5;
   margin-top: 1.25rem;
-  display: block;
+  display: inline-block;
 }
 
 .formBlock {
   background-color: #ffffff;
   color: black;
   padding: 1rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .svgWaves {
@@ -107,5 +107,11 @@ hr {
     display: grid;
     grid-template-columns: 60% 1fr;
     grid-column-gap: 4rem;
+  }
+}
+
+@media(min-height: 800px) {
+  .container {
+    padding-top: 4rem;
   }
 }
