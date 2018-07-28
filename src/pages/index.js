@@ -1,12 +1,25 @@
 import React from 'react'
 import Link from 'gatsby-link'
+// import TextLoop from 'react-text-loop';
+import TextLoopDev from "../components/TextLoop";
 
 const IndexPage = () => (
   <div>
     <div className="Hero">
       <div className="floaters">
         <div className="CalloutText">
-        <h1>Factfulness is the stress-reducing habit of only carrying opinions for which you have strong supporting facts.</h1>
+        <h1>Factfulness is ...
+          {"\n"}
+          <TextLoopDev speed={8000} inline={false}>
+            <span>the stress-reducing habit of only carrying opinions for which you have strong supporting facts.</span>
+            <span>recognizing when we get negative news, and remembering that information about bad events is much more likely to reach us.</span>
+            <span>the stress-reducing habit of only carrying opinions for which you have strong supporting facts.</span>
+            <span>recognizing when we get negative news, and remembering that information about bad events is much more likely to reach us.</span>
+            <span>recognizing that many things - people, countries, religions, and cultures - appear to be constant just because the change is happening slowly, and remembering that even small, slow changes gradually add up to big changes.</span>
+            <span>recognizing when a scapegoat is being used and remembering that blaming an individual often steals the focus from other possible explanations and blocks our ability to prevent similar problems in the future.</span>
+            <span>recognizing when a decision feels urgent and remembering that it rarely is.</span>
+          </TextLoopDev>
+        </h1>
         <div className="bookBlock">
           <img src={require('../images/book.jpeg')} width="160" />
           <div className="bookText">
