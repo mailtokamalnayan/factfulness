@@ -76,6 +76,14 @@ hr {
   bottom: 0;
 }
 
+.bookBlockGrid img {
+  transition: 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.bookBlockGrid img:hover {
+  transform: scale(1.1);
+}
+
 @media (min-width:768px) {
   .container, .bookBlockGrid {
     display: grid;

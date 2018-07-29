@@ -29,7 +29,12 @@ const IndexPage = () => (
         <hr />
           {/* <h1 className="titleSmall">Increase your factfulness...</h1> */}
           <div className="bookBlockGrid">
-            <img src={require('../images/book.jpeg')} width="140" />
+          <a
+              target="_blank"
+              className="bookLink" 
+              href={"https://www.amazon.com/Factfulness-Reasons-World-Things-Better/dp/1250107814"}>
+                <img src={require('../images/book.jpeg')} width="140" />
+              </a>
             <div className="bookText">
               <h2 className="bookName">Factfulness: Ten Reasons We're Wrong About the World―and Why Things Are Better Than You Think</h2>
               <p className="authorName">by Hans Rosling, Anna Rosling Rönnlund and Ola Rosling</p>
