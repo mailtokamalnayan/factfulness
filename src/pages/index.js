@@ -6,7 +6,7 @@ import TextLoopDev from "../components/TextLoop";
 const IndexPage = () => (
   <div>
     <div className="container">
-      <div className="block1-2">
+      <div className="leftBlock">
         <header>
           <h1>
             <div className="titleSmall">Factfulness is ...</div>
@@ -24,8 +24,9 @@ const IndexPage = () => (
             </div>
           </h1>
         </header>
-        <hr />
+
         <div className="bookBlock">
+        <hr />
           {/* <h1 className="titleSmall">Increase your factfulness...</h1> */}
           <div className="bookBlockGrid">
             <img src={require('../images/book.jpeg')} width="140" />
@@ -38,14 +39,13 @@ const IndexPage = () => (
               href={"https://www.amazon.com/Factfulness-Reasons-World-Things-Better/dp/1250107814"}> Get it on Amazon </a>
             </div> 
           </div>
-
+          <footer>
+            <a target="_blank"
+            className="twitterLink"
+            href={"https://twitter.com/kns008"}>
+            by @kns008 </a>
+          </footer>
         </div>
-        <footer>
-          <a target="_blank"
-          className="twitterLink"
-          href={"https://twitter.com/kns008"}>
-          by @kns008 </a>
-        </footer>
       </div>
       <div className="block-1of2">
         <div className="formBlock">

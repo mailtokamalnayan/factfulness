@@ -29,6 +29,7 @@ hr {
 .titleSmall {
   font-size: 0.8rem;
   font-weight: 200;
+  margin-bottom: 0.25rem;
 }
 
 .loopingText {
@@ -95,8 +96,11 @@ hr {
     padding-top: 1rem;
   }
   .loopingText {
-    min-height: 200px;
     max-width: 90%;
+  }
+  .leftBlock {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
   }
 }
 
