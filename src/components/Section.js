@@ -4,10 +4,11 @@ import Wave from './Wave'
 
 const FormBlock = styled.div`
     background-color: #fff;
-    min-height: 600px;
+    min-height: 65vh;
     padding: 1rem;
     color: black;
     position: relative;
+    margin-top: 1.75rem;
 `
 
 const SectionHead = styled.h1`
@@ -31,7 +32,6 @@ const WaveBottom = styled.div`
 
 const Section = props => (
     <FormBlock>
-        <WaveBottom><Wave /></WaveBottom>
         <SectionHead>{props.title}</SectionHead>
         <Question>{props.question}</Question>
         <div>

@@ -4,11 +4,12 @@ import Link from 'gatsby-link'
 import TextLoopDev from "../components/TextLoop";
 import Section from "../components/Section";
 import Wave from '../components/Wave';
+import BookLink from '../components/BookLink';
 
 const IndexPage = () => (
   <div>
     <div className="container">
-      <div className="leftBlock">
+      <div className="mainBlock">
         <header>
           <h1>
             <div className="titleSmall">Factfulness is ...</div>
@@ -26,41 +27,19 @@ const IndexPage = () => (
             </div>
           </h1>
         </header>
-
-        <div className="bookBlock">
-        <hr />
-          {/* <h1 className="titleSmall">Increase your factfulness...</h1> */}
-          <div className="bookBlockGrid">
-          <a
-              target="_blank"
-              className="bookLink" 
-              href={"https://www.amazon.com/Factfulness-Reasons-World-Things-Better/dp/1250107814"}>
-                <img src={require('../images/book.jpeg')} width="140" />
-              </a>
-            <div className="bookText">
-              <h2 className="bookName">Factfulness: Ten Reasons We're Wrong About the World―and Why Things Are Better Than You Think</h2>
-              <p className="authorName">by Hans Rosling, Anna Rosling Rönnlund and Ola Rosling</p>
-              <a
-              target="_blank"
-              className="bookLink" 
-              href={"https://www.amazon.com/Factfulness-Reasons-World-Things-Better/dp/1250107814"}> Get it on Amazon </a>
-            </div> 
-          </div>
-          <footer>
-            <a target="_blank"
-            className="twitterLink"
-            href={"https://twitter.com/kns008"}>
-            by @kns008 </a>
-          </footer>
-        </div>
+        <div className="block-1of2">
+          <Section 
+          title="Measure your factfulness..."
+          question="What's your preferred method of business?"
+          />
+        </div> 
       </div>
-      <div className="block-1of2">
-        <Section 
-        title="Measure your factfulness..."
-        question="What's your preferred method of business?"
-        />
-      </div>
+      <BookLink />
+      <footer>
+        <a href={'https://twitter.com/kns008'}>by kns008 in 🇸🇬</a> · <a href={'https://github.com/mailtokamalnayan/factfulness'}>Github</a>
+      </footer>
     </div>
+    <Wave />
   </div>
 )
 
