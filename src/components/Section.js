@@ -1,14 +1,60 @@
 import React from 'react'
 import styled from 'styled-components'
 import Wave from './Wave'
+import Quiz from 'react-quiz-component'
+
+export const quiz =  {
+    "questions": [
+      {
+        "question": "How can you access the state of a component from inside of a member function?",
+        "questionType": "text",
+        "answers": [
+          "this.getState()",
+          "this.prototype.stateValue",
+          "this.state",
+          "this.values"
+        ],
+        "correctAnswer": "3"
+      },
+      {
+        "question": "ReactJS is developed by _____?",
+        "questionType": "text",
+        "answers": [
+          "Google Engineers",
+          "Facebook Engineers"
+        ],
+        "correctAnswer": "2"
+      },
+      {
+        "question": "ReactJS is an MVC based framework?",
+        "questionType": "text",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "2"
+      },
+      {
+        "question": "Which of the following concepts is/are key to ReactJS?",
+        "questionType": "text",
+        "answers": [
+          "Component-oriented design",
+          "Event delegation model",
+          "Both of the above",
+        ],
+        "correctAnswer": "3"
+      }
+    ]
+  } 
 
 const FormBlock = styled.div`
     background-color: #fff;
-    min-height: 65vh;
+    height: 65vh;
     padding: 1rem;
     color: black;
     position: relative;
     margin-top: 1.75rem;
+    overflow: scroll;
 `
 
 const SectionHead = styled.h1`
@@ -33,19 +79,7 @@ const WaveBottom = styled.div`
 const Section = props => (
     <FormBlock>
         <SectionHead>{props.title}</SectionHead>
-        <Question>{props.question}</Question>
-        <div>
-            <input type="radio" id="huey" name="drone" checked />
-            <label for="huey">Huey</label>
-        </div>
-        <div>
-            <input type="radio" id="louie" name="drone" />
-            <label for="louie">Louie</label>
-        </div>
-        <div>
-            <input type="radio" id="dewey" name="drone" />
-            <label for="dewey">Dewey</label>
-        </div>
+        <Quiz quiz={quiz}/>
     </FormBlock>
 )
 
