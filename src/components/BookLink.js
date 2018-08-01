@@ -23,11 +23,10 @@ const BookToast = styled.a`
     grid-column-gap: 0.5rem;
     color: inherit;
     text-decoration: none;
-    margin: 4rem 0;
+    margin: 4rem auto;
     &:hover {
         box-shadow: 0 10px 20px rgba(0,0,0, 0.9);
     }
-    animation: ${fadeInUp} 3s 1s both cubic-bezier(0.075, 0.82, 0.165, 1);
     transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
     @media (min-width: 768px) {
         position: fixed;
@@ -37,6 +36,7 @@ const BookToast = styled.a`
         grid-template-columns: 48px 1fr;
         grid-column-gap: 0.75rem;
         z-index: 10;
+        animation: ${fadeInUp} 3s 1s both cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 `
 const BookImage = styled.img`
