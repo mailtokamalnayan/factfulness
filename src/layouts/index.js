@@ -9,8 +9,8 @@ const Layout = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Factfulness is a fight for replacing ignorance with a fact-based worldview. Measure your factfulness today.' },
+        { name: 'keywords', content: 'book, factfulness, Hans Rosling' },
       ]}
     />
       {children()}

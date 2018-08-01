@@ -1,26 +1,15 @@
-# gatsby-starter-default
-The default Gatsby starter.
+# Measure your factfulness
+Every now and then I'm inspired by books that change the way I think. One of the books that recently affected my thinking was — [Factfulness: Ten Reasons We're Wrong About The World - And Why Things Are Better Than You Think](https://amzn.to/2vse4Ib)
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+The book starts with few basic questions regarding world — i.e, how many people in the world have access to electricity etc... The questionnaire acts as a resounding proof of how wrong and ignorant we are about the world. This app is an attempt to encourage more people to answer those questions and become more aware of their ignorance. 
 
-## Install
+## Contributing
+### Dependecies
+- [GatsbyJS](https://www.gatsbyjs.org/)
+- [NodeJS](https://nodejs.org/en/)
 
-Make sure that you have the Gatsby CLI program installed:
-```sh
-npm install --global gatsby-cli
-```
+Once you have installed the dependencies and cloned the repository, switch to the folder and run `npm install` followed by `gatsby develop`. Make your changes and submit your pull requests.
 
-And run from your CLI:
-```sh
-gatsby new gatsby-example-site
-```
-
-Then you can run it by:
-```sh
-cd gatsby-example-site
-gatsby develop
-```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+## Credits
+- [DesignCode](https://designcode.io/)
+- [React Quiz Component](https://wingkwong.github.io/react-quiz-component/)
