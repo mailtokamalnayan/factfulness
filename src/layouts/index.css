@@ -194,6 +194,16 @@ button.btn-large:hover {
 
 .react-quiz-container .result-question {
   margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.result-question h3.card-title {
+  font-size: 0.8rem !important;
+}
+
+.result-question button {
+  font-size: 0.8rem !important;
+  padding: 0.25rem !important;
 }
 
 .react-quiz-container .row {
