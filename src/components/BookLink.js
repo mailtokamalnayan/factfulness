@@ -1,8 +1,18 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const fadeInUp = keyframes`
+    0% {
+        opacity: 0;
+        transform: translate(-50%, 10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -20px);
+    }
+`
 
 const BookToast = styled.a`
-    ${'' /* position: fixed; */}
     background: #333;
     border-radius: 999px;
     width: 300px;
@@ -14,6 +24,11 @@ const BookToast = styled.a`
     color: inherit;
     text-decoration: none;
     margin: 4rem 0;
+    &:hover {
+        box-shadow: 0 10px 20px rgba(0,0,0, 0.9);
+    }
+    animation: ${fadeInUp} 3s 1s both cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
     @media (min-width: 768px) {
         position: fixed;
         left: 50%;
@@ -21,7 +36,6 @@ const BookToast = styled.a`
         width: 380px;
         grid-template-columns: 48px 1fr;
         grid-column-gap: 0.75rem;
-        bottom: -50px;
         z-index: 10;
     }
 `
@@ -41,7 +55,7 @@ const BookAuthor = styled.h2`
 `
 
 const BookLink = props => (
-    <BookToast href={'https://www.amazon.com/Factfulness-Reasons-World-Things-Better/dp/1250107814'}>
+    <BookToast target={'_blank'} href={'https://www.amazon.com/Factfulness-Reasons-World-Things-Better/dp/1250107814'}>
         <BookImage src={'https://images-na.ssl-images-amazon.com/images/I/51tvugRSHKL._SX322_BO1,204,203,200_.jpg'} />
         <div>
             <BookTitle>Factfulness</BookTitle>
