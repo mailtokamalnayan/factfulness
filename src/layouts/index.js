@@ -3,17 +3,19 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Header from '../components/header'
 import './index.css'
+import Footer from '../components/Footer';
 
 const Layout = ({ children, data }) => (
   <div>
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: 'description', content: 'Factfulness is a fight for replacing ignorance with a fact-based worldview. Measure your factfulness today.' },
-        { name: 'keywords', content: 'book, factfulness, Hans Rosling' },
+        { name: 'description', content: data.site.siteMetadata.description },
+        { name: 'keywords', content: data.site.siteMetadata.keywords },
       ]}
     />
       {children()}
+      <Footer data={data} />
   </div>
 )
 
@@ -28,6 +30,17 @@ export const query = graphql`
     site {
       siteMetadata {
         title
+        description
+        keywords
+      }
+    }
+    allContentfulFooter(sort: {fields: [createdAt], order: ASC}){
+      edges {
+        node {
+          link
+          url
+          createdAt
+        }
       }
     }
   }
