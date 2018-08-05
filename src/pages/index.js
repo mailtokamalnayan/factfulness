@@ -35,9 +35,6 @@ const IndexPage = () => (
         </div> 
       </div>
       <BookLink />
-      <footer>
-        <a href={'https://twitter.com/kns008'}>by kns008 in 🇸🇬</a> · <a href={'https://github.com/mailtokamalnayan/factfulness'}>Github</a>
-      </footer>
     </div>
     <Wave />
   </div>
