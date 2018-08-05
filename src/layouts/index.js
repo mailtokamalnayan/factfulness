@@ -14,6 +14,9 @@ const Layout = ({ children, data }) => (
         { name: 'keywords', content: data.site.siteMetadata.keywords },
       ]}
     />
+    <Helmet>
+      <meta property="og:image" content="../images/site-cover.png" />
+    </Helmet>
       {children()}
       <Footer data={data} />
   </div>
