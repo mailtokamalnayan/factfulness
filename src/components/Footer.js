@@ -19,7 +19,7 @@ const LinkGroup = styled.div`
 
 const FooterBlock = styled.div`
     position: absolute;
-    bottom: 0.5rem;
+    bottom: 1rem;
     text-align: center;
     width: 100%;
 `

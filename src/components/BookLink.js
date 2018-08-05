@@ -22,13 +22,14 @@ const BookToast = styled.a`
     color: inherit;
     text-decoration: none;
     margin: 4rem auto;
-    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
     &:hover {
         box-shadow: 0 10px 20px rgba(0,0,0, 0.9);
-        transform: translate(-50%, -10%);
+        transform: translate(-50%, -20px) scale(1.05);
     }
     @media (min-width: 768px) {
         position: fixed;
+        bottom: 0;
         left: 50%;
         transform: translateX(-50%);
         width: 380px;
