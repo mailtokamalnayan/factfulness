@@ -15,7 +15,7 @@ const Layout = ({ children, data }) => (
       ]}
     />
     <Helmet>
-      <meta property="og:image" content="../images/site-cover.png" />
+      <meta property="og:image" content="https://preview.ibb.co/g254RK/site_cover.png" />
     </Helmet>
       {children()}
       <Footer data={data} />
