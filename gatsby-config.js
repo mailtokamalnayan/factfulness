@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Measure your factfulness',
-    description: 'Measure your factfulness. Factfulness is the stress-reducing habit of only carrying opinions for which you have strong supporting facts.',
+    description: 'Factfulness is the stress-reducing habit of only carrying opinions for which you have strong supporting facts. Measure your factfulness now.',
     keywords: 'factfulness, book, hans rosling, world, data'
   },
   plugins: [
