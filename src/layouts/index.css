@@ -36,9 +36,9 @@ hr {
 }
 
 .loopingText {
-  font-size: 1.6rem;
-  font-weight: bold;
-  line-height: 1.2;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.3;
   min-height: 400px;
 }
 
