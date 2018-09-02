@@ -130,15 +130,13 @@ export const quiz =  {
 
 const FormBlock = styled.div`
     background-color: #fff;
-    height: 85vh;
-    @media (min-width: 768px) {
-      height: 65vh;
-    }
+    height: 480px;
     padding: 1rem;
     color: black;
     position: relative;
     margin-top: 1.75rem;
     overflow: scroll;
+    border-radius: 4px;
 `
 
 const SectionHead = styled.h1`
