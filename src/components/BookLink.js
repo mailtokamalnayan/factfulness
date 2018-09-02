@@ -56,7 +56,7 @@ const BookAuthor = styled.h2`
 `
 
 const BookLink = props => (
-    <BookToast target={'_blank'} href={'https://amzn.to/2vse4Ib'}>
+    <BookToast target={'_blank'} href={'https://www.amazon.com/Factfulness-Reasons-Wrong-Things-Better/dp/1473637465/'}>
         <BookImage src={'https://images-na.ssl-images-amazon.com/images/I/51tvugRSHKL._SX322_BO1,204,203,200_.jpg'} />
         <div>
             <BookTitle>Factfulness</BookTitle>
